@@ -1,0 +1,40 @@
+baseurl: https://nyogjtrc.github.io/
+title: "Nyo's Study Book"
+languageCode: zh-tw
+copyright: "Copyright (c) 2017 nyogjtrc."
+theme: hugo-dusk
+canonifyurls: true
+paginate: 5
+
+#uglyURLs: true
+googleAnalytics: null
+publishDir: ../nyogjtrc.github.io
+permalinks:
+      posts: /posts/:year/:month/:title/
+
+SectionPagesMenu: main
+
+menu:
+    main:
+        - name: Posts
+          weight: -120
+          identifier: posts
+          url: /posts/
+        - name: Tags
+          weight: -110
+          identifier: tags
+          url: /tags/
+        - name: About
+          weight: -100
+          identifier: about
+          url: /about/
+
+author:
+    name: nyo
+
+params:
+    meta:
+        keywords: nyo, nyogjtrc, blog, study
+        description: 我是 nyo，這是我的軟體開發筆記部落格
+    github: nyogjtrc
+
