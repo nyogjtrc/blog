@@ -10,7 +10,7 @@ googleAnalytics: null
 hasCJKLanguage: true
 publishDir: ../nyogjtrc.github.io
 permalinks:
-      posts: /posts/:year/:month/:title/
+      posts: /posts/:year/:month/:filename/
 
 SectionPagesMenu: main
 
