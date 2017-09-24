@@ -6,8 +6,8 @@ theme: hugo-dusk
 canonifyurls: true
 paginate: 5
 
-#uglyURLs: true
 googleAnalytics: null
+hasCJKLanguage: true
 publishDir: ../nyogjtrc.github.io
 permalinks:
       posts: /posts/:year/:month/:title/
