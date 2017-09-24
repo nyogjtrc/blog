@@ -2,7 +2,6 @@
 title: "用 Hugo 發佈部落格"
 date: 2017-09-24T13:36:35+08:00
 tags: [hugo, github, golang, blog]
-draft: true
 ---
 
 Hugo 是用 Go 開發的靜態網站產生器
