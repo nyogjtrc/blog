@@ -16,7 +16,7 @@ posts() {
 # start hugo dev server
 #
 server() {
-    cmd="hugo server"
+    cmd="hugo server -D"
 
     echo $cmd
     $cmd
