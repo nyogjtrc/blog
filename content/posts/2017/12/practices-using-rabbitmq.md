@@ -5,7 +5,7 @@ tags: []
 draft: true
 ---
 
-# install
+# 安裝服務
 
 直接使用 docker image
 
@@ -27,6 +27,18 @@ default user guest / guest
 
 # publish message with golang
 
+連上 RabbitMQ
+建立 channel
+宣告 queue
+發佈 message
+
 # recive message with golang
 
+連上 RabbitMQ
+建立 channel
+宣告 queue
+接收 message
+
 # rabbit hunter
+
+https://github.com/nyogjtrc/practice-go/tree/master/rabbitMQ
