@@ -14,16 +14,16 @@ $ go get -v github.com/gohugoio/hugo
 
 new post:
 ```
-$ ./bootstrap.sh posts <new-post-title>
-``````
+$ make new POST=<new-post-title>
+```
 
 start dev server:
 ```
-$ ./bootstrap.sh server
-``````
+$ make server
+```
 
 render:
 ```
-$ ./bootstrap.sh build
-``````
+$ make build
+```
 
