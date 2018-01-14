@@ -1,7 +1,3 @@
-# create new post
-new:
-	hugo new -v posts/$$(date +%Y/%m)/$(POST).md
-
 # start hugo dev server with draft post
 server:
 	hugo server -D
@@ -9,3 +5,7 @@ server:
 # render static file
 build:
 	hugo -v
+
+# create new post
+new:
+	hugo new -v posts/$$(date +%Y/%m)/$(POST).md
