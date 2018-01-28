@@ -20,7 +20,7 @@ $ brew install tmux
 
 apt 上裝的可能會太舊，直接裝 github 上最新 release 的
 
-https://gist.github.com/P7h/91e14096374075f5316e
+參考別人寫好的腳本: https://gist.github.com/P7h/91e14096374075f5316e
 
 ```
 VERSION=2.6
@@ -41,6 +41,8 @@ sudo mv tmux-${VERSION} /usr/local/src
 
 ## tmux.conf
 
+放上幾個我覺得實用的設定
+
 ```tmux
 set -g default-terminal "screen-256color"
 
@@ -48,12 +50,10 @@ set -g default-terminal "screen-256color"
 set -g mouse on
 
 
-# new prefix {
+# new prefix
 unbind-key C-b
 set -g prefix C-a
 bind-key C-a send-prefix
-# }
-
 
 # <prefix> + r | reloading config
 bind-key r source-file ~/.tmux.conf \; display-message "Yo~! .tmux.conf reloaded!"
@@ -62,6 +62,10 @@ bind-key \ split-window -h -c '#{pane_current_path}'
 bind-key - split-window -v -c '#{pane_current_path}'
 ```
 
+### prefix
+
+預設是 ctrl + b，不過上面的設定我改成 ctrl + a，目前使用是算順手  
+也有人設定成 ctrl + q 之類的
 
 ## Usage
 
@@ -85,15 +89,17 @@ $ tmux ls
 $ tmux a
 ```
 
-## Tmux 的畫面
+## Tmux 使用概念
 
-session > window > pane
+畫面單位由大到小會是 session > window > pane
 
 session: 一個整個 tmux 的畫面
 window: 分頁
 pane: 切割畫面
 
 ## shortcut
+
+部分的 shortcut 筆記，之後再整理完整一點的
 
 ```
 c create new window
