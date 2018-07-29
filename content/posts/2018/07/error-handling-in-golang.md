@@ -1,13 +1,12 @@
 ---
 title: "Error Handling in Golang"
 date: 2018-07-26T15:50:07+08:00
-tags: []
-draft: true
+tags: [golang, error]
 ---
 
-## golang 原生的 error type
+## Golang 原生的 Error Type
 
-golang 的 error interface
+先認識 golang 的 error interface
 
 ```
 type error interface {
@@ -15,7 +14,7 @@ type error interface {
 }
 ```
 
-實作 Error() 方法，就會是 error type，例如 os package 裡面的 PathError
+只要 struct 實作 Error() 方法，就會是 error type，例如 os package 裡面的 PathError
 
 https://golang.org/pkg/os/#PathError
 
@@ -30,15 +29,19 @@ type PathError struct {
 func (e *PathError) Error() string { return e.Op + " " + e.Path + ": " + e.Err.Error() }
 ```
 
-## 建立自己的 app error struct
+## 建立自己程式裡的 Error struct
 
-依照使用情境設計 strcut
+依照使用情境 error strcut  
 
-### api error
+### RESTful API Error
 
-data: code, message, sub error
+RESTful API 除了訊息之後，要幫各種情況的錯誤加上編號，方便程式做後續的應對
 
-method: output, trace log
+並可以把其他來源的錯誤一並放入，方便追蹤錯誤
+
+strcut fields: code, message, error
+
+example:
 
 ```
 // AppError struct with code and message
@@ -57,9 +60,7 @@ func New(code int, message string, err error) *AppError {
 func (e *AppError) Error() string {
 	return fmt.Sprintf("%d: %s", e.code, e.message)
 }
-```
 
-```
 // Code getter
 func (e *AppError) Code() int {
 	return e.code
@@ -76,9 +77,15 @@ func (e *AppError) ErrorSummry() string {
 }
 ```
 
-### api gateway error
+### API Gateway Error
 
-data: code, message, internal code
+Gateway 公開提供服務在網路上，有時候會有安全性的需要，要隱藏一些內部錯誤訊息
+
+但是維運上還是會需要有足夠的資訊來了解服務當下的狀況，可以放一個內部的代碼，多一點線索
+
+strcut fields: code, message, internal code
+
+example:
 
 ```
 // Error for gateway
@@ -98,3 +105,13 @@ func (e *Error) Error() string {
 	return fmt.Sprintf("%d: %s (%d)", e.code, e.message, e.interCode)
 }
 ```
+
+### Full Example
+
+https://github.com/nyogjtrc/practice-go/tree/master/error-code
+
+
+### Reference
+
+- https://blog.golang.org/error-handling-and-go
+- https://medium.com/@sebdah/go-best-practices-error-handling-2d15e1f0c5ee
