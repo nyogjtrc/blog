@@ -2,7 +2,6 @@
 title: "ThinkPad X1 Carbon 6th 的 Debian 安裝記錄"
 date: 2018-12-03T14:53:59+08:00
 tags: [debian]
-draft: true
 ---
 
 入手 ThinkPad X1c 來當工作機
