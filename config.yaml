@@ -1,10 +1,10 @@
 baseurl: https://nyogjtrc.github.io/
 title: "Nyo's Study Book"
 languageCode: zh-tw
-copyright: "Copyright (c) 2017 nyogjtrc."
+copyright: "Copyright (c) 2017-2018 nyogjtrc."
 theme: hugo-dusk
 canonifyurls: true
-paginate: 5
+paginate: 6
 
 googleAnalytics: UA-43264564-2
 hasCJKLanguage: true
