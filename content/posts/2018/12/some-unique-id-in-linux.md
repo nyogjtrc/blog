@@ -2,7 +2,6 @@
 title: "查詢 Linux 上的一些 Unique ID"
 date: 2018-12-10T11:34:35+08:00
 tags: [linux]
-draft: true
 ---
 
 每台機器都會有一些自己唯一的 id
