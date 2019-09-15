@@ -14,6 +14,9 @@ permalinks:
 
 SectionPagesMenu: main
 
+pygmentsCodeFences: true
+pygmentsStyle: "monokai"
+
 menu:
     main:
         - name: Posts

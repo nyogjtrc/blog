@@ -2,13 +2,15 @@
 
   {{ partial "social-links-footer.html" . }}
 
-  <div class="copyright"> {{ .Site.Copyright }} </div>
+  <div class="copyright"> {{ .Site.Copyright | safeHTML }} </div>
 
   <div class="poweredby">
     Powered by <a href="https://gohugo.io/">Hugo</a>.
   </div>
 
   </footer>
+
+</div> <!-- main -->
 
 </body>
 </html>

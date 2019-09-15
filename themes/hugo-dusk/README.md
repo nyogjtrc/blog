@@ -5,11 +5,12 @@ Simple minimalistic dark theme for [Hugo](https://gohugo.io/).
 ## Features
 
 * Responsive minimalistic design
-* Syntax highlight with [highlight.js](https://highlightjs.org/)
+* Configurable theme colors (with custom css file)
+* Syntax highlight with builtin [Chroma](http://gohugo.io/content-management/syntax-highlighting/)
 * [OpenGraph](http://ogp.me/), [Twitter cards](https://dev.twitter.com/cards/overview) support
 * [Disqus](https://disqus.com/) comments support
 * [Google analytics](https://www.google.com/analytics/) (async)
-* Configrable pagination for posts
+* Configurable pagination for posts
 * Lazy menu
 * Custom 404 page
 
@@ -42,6 +43,11 @@ disqusShortname = ""
 
 SectionPagesMenu = "main"
 
+# use Chroma for syntax highlight
+pygmentsStyle = "native" # other dark style options: vim, fruity, monokai
+# enable syntax highlight for code blocks
+pygmentsCodeFences = true
+
 [[menu.main]]
   name = "Posts"
   weight = -120
@@ -64,4 +70,5 @@ SectionPagesMenu = "main"
   twitter = "twitter id"
   linkedin = "linkedin id"
   email = "myemail"
+  theme_colors = "default-dark" # uses color css file under static/css/default-dark.css
 ~~~~

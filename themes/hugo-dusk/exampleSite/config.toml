@@ -5,11 +5,18 @@ languageCode = "en-US"
 canonifyurls = true
 paginate = 3
 theme = "hugo-dusk"
+themesDir = "../.."
+enableRobotsTXT = true
 
 googleAnalytics = ""
 disqusShortname = ""
 
 SectionPagesMenu = "main"
+
+# use Chroma for syntax highlight
+pygmentsStyle = "native" # other dark style options: vim, fruity, monokai
+# enable syntax highlight for code blocks
+pygmentsCodeFences = true
 
 [[menu.main]]
   name = "Posts"
@@ -22,6 +29,12 @@ SectionPagesMenu = "main"
   weight = -110
   identifier = "tag"
   url = "/tags/"
+
+[taxonomies]
+  category = "categories"
+  group = "groups"
+  series = "series"
+  tag = "tags"
 
 [author]
   name = ""
@@ -36,3 +49,4 @@ SectionPagesMenu = "main"
   #gitlab = "gitlab id"
   twitter = "twitter id"
   #linkedin = "linkedin id"
+  theme_colors = "default-dark"
