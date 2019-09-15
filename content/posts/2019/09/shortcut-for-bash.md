@@ -1,11 +1,10 @@
 ---
-title: "Shortcut for Bash"
+title: "Bash 常用快捷鍵"
 date: 2019-09-15T13:15:40+08:00
 tags: [terminal, bash]
-draft: true
 ---
 
-記錄一些比較常用的快捷鍵
+記錄一些比較常用/實用(可能)的快捷鍵
 
 ## 控制
 - **Ctrl+C**: 中斷正在執行的程式
