@@ -2,7 +2,6 @@
 title: "在 Amazon Linux 2 上安裝 Docker"
 date: 2019-11-20T00:42:43+08:00
 tags: [docker,aws]
-draft: true
 ---
 
 最近要在偶然拿到手的 EC2 instance 上安裝 docker，卻意外的無法照著官網的說明安裝！
