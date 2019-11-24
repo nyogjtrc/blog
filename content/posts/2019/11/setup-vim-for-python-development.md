@@ -28,7 +28,7 @@ $ pip install jedi
 Plug 'deoplete-plugins/deoplete-jedi', { 'for': 'python' }
 ```
 
-### 使用截圖
+截圖:
 
 ![](/posts/2019/11/Screenshot_from_2019-11-24-21-20-37.png)
 
@@ -64,9 +64,9 @@ let g:ale_fixers = {
 \ }
 ```
 
-### 使用截圖
+截圖:
 
-![](Screenshot_from_2019-11-24_23-01-01.png)
+![](/posts/2019/11/Screenshot_from_2019-11-24_23-01-01.png)
 
 
 ## 總結
