@@ -1,5 +1,5 @@
 ---
-title: "Compare Git Workflows"
+title: "比較 Git Workflows"
 date: 2020-02-02T12:37:15+08:00
 tags: [git, github, gitlab]
 ---
@@ -9,6 +9,8 @@ tags: [git, github, gitlab]
 這邊整理一下目前常見的幾種 git 分支管理策略。
 
 ## Git flow
+
+![](/posts/2020/02/git-flow.png)
 
 出處: https://nvie.com/posts/a-successful-git-branching-model/
 
@@ -32,6 +34,8 @@ tags: [git, github, gitlab]
 
 ## Github flow
 
+![](/posts/2020/02/github-flow.png)
+
 出處: https://guides.github.com/introduction/flow/
 
 分支策略:
@@ -53,6 +57,8 @@ tags: [git, github, gitlab]
 - 遇到有多個環境或是多個版本時，github flow 就無法支援了
 
 ## Gitlab flow
+
+![](/posts/2020/02/gitlab-flow.png)
 
 出處:
 
