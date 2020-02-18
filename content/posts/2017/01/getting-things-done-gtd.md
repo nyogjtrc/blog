@@ -14,9 +14,12 @@ tags: [GTD]
 Getting Things Done，縮寫成 GTD，是由 David Allen 提出的一套個人的時間管理方法。用來管理你的生活中跟工作上的大小事，讓你可以排除干擾進而專心做事。
 
 # GTD 原則
-Your mind is for having ideas, not holding them.
-你的大腦是用來思考，而不是用來記憶的。
-將所有事情放在手邊，而不是放在大腦裡。
+
+> Your mind is for having ideas, not holding them.
+
+
+> 你的大腦是用來思考，而不是用來記憶的。  
+> 將所有事情放在手邊，而不是放在大腦裡。
 
 # 五個步驟
 ## 1. Capture - 捕捉
