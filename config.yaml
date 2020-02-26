@@ -2,42 +2,62 @@ baseurl: https://nyogjtrc.github.io/
 title: "Nyo's Study Book"
 languageCode: zh-tw
 copyright: "Copyright (c) 2017-2018 nyogjtrc."
-theme: hugo-dusk
+# theme: hugo-dusk
+theme: hermit
 canonifyurls: true
 paginate: 6
+
+taxonomies:
+  tag: tags
 
 googleAnalytics: UA-43264564-2
 hasCJKLanguage: true
 publishDir: ../nyogjtrc.github.io
 permalinks:
-      posts: /posts/:year/:month/:filename/
+  posts: /posts/:year/:month/:filename/
 
 SectionPagesMenu: main
 
 pygmentsCodeFences: true
-pygmentsStyle: "monokai"
+pygmentsUseClasses: true
+pygmentsStyle: monokai
+#
+#pygmentsStyle: "monokai"
 
 menu:
-    main:
-        - name: Posts
-          weight: -120
-          identifier: posts
-          url: /posts/
-        - name: Tags
-          weight: -110
-          identifier: tags
-          url: /tags/
-        - name: About
-          weight: -100
-          identifier: about
-          url: /about/
+  main:
+    - name: Posts
+      weight: -120
+      identifier: posts
+      url: /posts/
+    - name: Tags
+      weight: -110
+      identifier: tags
+      url: /tags/
+    - name: About
+      weight: -100
+      identifier: about
+      url: /about/
 
 author:
-    name: nyo
+  name: nyo
 
 params:
-    meta:
-        keywords: nyo, nyogjtrc, blog, study
-        description: 我是 nyo，這是我的軟體開發筆記部落格
-    github: nyogjtrc
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04 -0700"
+  relatedPosts: true
+
+  homeSubtitle: 我是 nyo，這是我的軟體開發筆記部落格
+  footerCopyright: " &#183; Copyright (c) 2015-2020"
+
+  meta:
+    keywords: nyo, nyogjtrc, blog, study
+  description: 我是 nyo，這是我的軟體開發筆記部落格
+  social:
+    - name: github
+      url: https://github.com/nyogjtrc
+    - name: twitter
+      url: https://twitter.com/nyogjtrc
 
