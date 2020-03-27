@@ -16,22 +16,21 @@ tags: [gitlab, gitlab-ci, ci]
 
 先安裝基本的套件
 
-```
+```sh
 sudo apt-get update
 sudo apt-get install -y curl openssh-server ca-certificates
 ```
 
 加入 gitlab 套件庫
 
-```
+```sh
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 ```
 
 安裝 gitlab
 
-```
+```sh
 sudo EXTERNAL_URL="https://gitlab.example.com" apt-get install gitlab-ce
-
 ```
 
 安裝完畢之後，就可以開 Browser 登入 Gitlab 了，預設的帳號是 root
@@ -43,7 +42,8 @@ sudo EXTERNAL_URL="https://gitlab.example.com" apt-get install gitlab-ce
 前置作業就是在 server 上安裝 docker
 
 接來執行以下 docker 指令，就有一個 gitlab 服務了
-```
+
+```sh
 sudo docker run --detach \
   --hostname gitlab.example.com \
   --publish 443:443 --publish 80:80 --publish 22:22 \
@@ -58,7 +58,8 @@ sudo docker run --detach \
 ## 用 Docker 安裝 gitlab runner
 
 執行以下 docker 指令
-```
+
+```sh
 docker run -d --name gitlab-runner --restart always \
   -v /srv/gitlab-runner/config:/etc/gitlab-runner \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -69,7 +70,7 @@ docker run -d --name gitlab-runner --restart always \
 
 直接使用 docker-compose 更直接快速的執行 gitlab 跟 runner 服務
 
-```
+```yaml
 version: "3"
 services:
   web:
@@ -97,7 +98,7 @@ services:
 
 如果要更新，只要兩個指令
 
-```
+```sh
 docker-compose pull
 docker-compose up -d
 ```
@@ -107,14 +108,16 @@ docker-compose up -d
 先到 Admin Area > Overview > Runners 頁面，找到 registration token
 
 執行 register 指令
-```
+
+```sh
 docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
 ```
 
 選項請參考官網 https://docs.gitlab.com/runner/register/
 
 如果 Gitlab 有啟用 SSL，你可能需要帶上 crt file
-```
+
+```sh
 docker run --rm -t -i -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register \
   --tls-ca-file=/srv/gitlab/config/ssl/gitlab.example.com.crt
 ```

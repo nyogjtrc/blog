@@ -10,7 +10,7 @@ tags: [bash, linux]
 
 改以清單的方式顯示 `PATH` 內容
 
-```
+```sh
 $ echo $PATH | tr ":" "\n"
 /usr/local/sbin
 /usr/local/bin
@@ -20,11 +20,11 @@ $ echo $PATH | tr ":" "\n"
 /bin
 ```
 
-```
+```sh
 echo "${PATH//:/$'\n'}"
 ```
 
-```
+```sh
 echo -e "${PATH//:/\n}"
 ```
 

@@ -10,18 +10,18 @@ Debian 的套件庫中只有 Firefox-ESR，跟 Firefox 官網的版本有點差�
 
 ## 下載
 
-```
+```sh
 $ tar xvf firefox-72.0.2.tar.bz2
 $ sudo mv firefox /opt
 ```
 
 ## 建立 firefox.desktop
 
-```
+```sh
 $ sudo vi /usr/share/applications/firefox-stable.desktop
 ```
 
-```
+```desktop
 [Desktop Entry]
 Name=Firefox Stable
 Comment=Web Browser

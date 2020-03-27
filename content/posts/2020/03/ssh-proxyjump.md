@@ -17,25 +17,27 @@ server 需要經由跳板登入時有幾種做法
 ## ssh 指令加上 -J 參數
 
 經由 jump.host 登入 dist.host
-```
-ssh -J jump.host dist.host
+
+```bash
+$ ssh -J jump.host dist.host
 ```
 
 需要打上 username port 的話，一樣的用法
-```
-ssh -J username@jump.host:port username@dist.host:port
+
+```sh
+$ ssh -J username@jump.host:port username@dist.host:port
 ```
 
 scp 的話
-```
-scp -o 'ProxyJump jump.host' myfile.txt dist.host:/my/dir
+```sh
+$ scp -o 'ProxyJump jump.host' myfile.txt dist.host:/my/dir
 ```
 
 ## 設定 ssh config
 
 編輯 ~/.ssh/config
 
-```
+```conf
 ### First jumphost. Directly reachable
 Host jump
   HostName jump.host
@@ -48,14 +50,14 @@ Host dist
 
 直接 ssh
 
-```
-ssh dist
+```sh
+$ ssh dist
 ```
 
 直接 scp
 
-```
-scp filename dist:~/
+```sh
+$ scp filename dist:~/
 ```
 
 

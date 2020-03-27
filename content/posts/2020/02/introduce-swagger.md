@@ -31,7 +31,7 @@ Swagger 團隊身有開源三種工具
 
 用 Docker 執行
 
-```
+```sh
 docker run -d -p 80:8080 swaggerapi/swagger-editor
 ```
 
@@ -43,7 +43,7 @@ docker run -d -p 80:8080 swaggerapi/swagger-editor
 
 用 Docker 執行
 
-```
+```sh
 docker run --rm -p 8080:8080 -e SWAGGER_JSON=/docs/index.yml -v $(PWD)/docs:/docs swaggerapi/swagger-ui
 ```
 

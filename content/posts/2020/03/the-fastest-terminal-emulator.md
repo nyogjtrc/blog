@@ -23,13 +23,13 @@ tags: [terminal, rust, gpu]
 
 ### Debian / Ubuntu
 
-```
+```sh
 $ apt install alacritty
 ```
 
 ### macOS
 
-```
+```sh
 $ brew cask install alacritty
 ```
 
