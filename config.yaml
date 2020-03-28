@@ -3,9 +3,10 @@ title: "Nyo's Study Book"
 languageCode: zh-tw
 copyright: "Copyright (c) 2017-2018 nyogjtrc."
 # theme: hugo-dusk
-theme: hermit
+# theme: hermit
+theme: hugo-coder
 canonifyurls: true
-paginate: 6
+paginate: 20
 
 taxonomies:
   tag: tags
@@ -19,8 +20,10 @@ permalinks:
 SectionPagesMenu: main
 
 pygmentsCodeFences: true
-pygmentsUseClasses: true
-pygmentsStyle: monokai
+#pygmentsUseClasses: true
+pygmentsStyle: dracula
+pygmentscodefencesguesssyntax: true
+
 #
 #pygmentsStyle: "monokai"
 
@@ -43,21 +46,33 @@ author:
   name: nyo
 
 params:
+  author: nyo
+  info: Developer
   dateform: "Jan 2, 2006"
   dateformShort: "Jan 2"
   dateformNum: "2006-01-02"
   dateformNumTime: "2006-01-02 15:04 -0700"
   relatedPosts: true
 
-  homeSubtitle: 我是 nyo，這是我的軟體開發筆記部落格
+  info: 我是 nyo，這是我的軟體開發筆記部落格
   footerCopyright: " &#183; Copyright (c) 2015-2020"
+
+  colorscheme: "auto"
+  maxSeeAlsoItems: 5
 
   meta:
     keywords: nyo, nyogjtrc, blog, study
   description: 我是 nyo，這是我的軟體開發筆記部落格
   social:
-    - name: github
+    - name: Github
+      icon: "fab fa-github"
       url: https://github.com/nyogjtrc
-    - name: twitter
+    - name: Twitter
+      icon: "fab fa-twitter"
       url: https://twitter.com/nyogjtrc
+    - name: rss
+      icon: "fas fa-rss-square"
+      url: /index.xml
+  custom_css:
+    - "css/custom.css"
 
