@@ -1,7 +1,6 @@
 baseurl: https://nyogjtrc.github.io/
 title: "Nyo's Study Book"
 languageCode: zh-tw
-copyright: "Copyright (c) 2017-2018 nyogjtrc."
 # theme: hugo-dusk
 # theme: hermit
 theme: hugo-coder
@@ -19,13 +18,9 @@ permalinks:
 
 SectionPagesMenu: main
 
-pygmentsCodeFences: true
-#pygmentsUseClasses: true
 pygmentsStyle: dracula
-pygmentscodefencesguesssyntax: true
-
-#
-#pygmentsStyle: "monokai"
+pygmentsCodeFences: true
+pygmentsCodeFencesGuessSyntax: true
 
 menu:
   main:
@@ -42,27 +37,29 @@ menu:
       identifier: about
       url: /about/
 
-author:
-  name: nyo
-
 params:
   author: nyo
-  info: Developer
+  description: nyo's development note
+  keywords: nyo,nyogjtrc,blog,developer,personal
+  info: 來自 nyo 的開發研究的筆記部落格
+  avatarurl: https://avatars0.githubusercontent.com/u/515965
+  footercontent: "Developer"
+
   dateform: "Jan 2, 2006"
   dateformShort: "Jan 2"
   dateformNum: "2006-01-02"
   dateformNumTime: "2006-01-02 15:04 -0700"
-  relatedPosts: true
+  #relatedPosts: true
 
-  info: 我是 nyo，這是我的軟體開發筆記部落格
-  footerCopyright: " &#183; Copyright (c) 2015-2020"
+  since: 2015
 
   colorscheme: "auto"
+
   maxSeeAlsoItems: 5
 
-  meta:
-    keywords: nyo, nyogjtrc, blog, study
-  description: 我是 nyo，這是我的軟體開發筆記部落格
+  custom_css:
+    - "css/custom.css"
+
   social:
     - name: Github
       icon: "fab fa-github"
@@ -73,6 +70,5 @@ params:
     - name: rss
       icon: "fas fa-rss-square"
       url: /index.xml
-  custom_css:
-    - "css/custom.css"
+      type: "application/rss+xml"
 
