@@ -1,15 +1,19 @@
 ---
 title: "About Me"
-date: 2017-09-24T01:30:38+08:00
+date: 2020-03-24T01:30:38+08:00
 ---
 
-# Hi, I am nyo.
+# Hello, it's nyo.
 
-這是 Nyo 的開發學習筆記
+來自 nyo 的開發研究的筆記部落格
 
 ## Who am I
 
-- 後端工程師，熟悉 PHP, Nginx, MySQL, Redis, Git
-- 近期在增加 React, GoLang 的經驗值
-- 研究 CI/CD 中
-- vim 愛用者
+- 後端工程師
+- 八年後端開發經驗。三年領導團隊經驗。
+- 主力為 Golnag, PHP
+- 搭配 VM 或 Docker 建構服務
+- 熟練 Git 等開發工具
+- 熟悉 Nginx, MySQL, Redis
+- 研究 CI/CD, Infrastructure as Code
+- Vim 愛用者
