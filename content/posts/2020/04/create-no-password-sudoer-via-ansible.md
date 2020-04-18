@@ -2,7 +2,6 @@
 title: "用 Ansible 建立一個不需要密碼的 sudoer"
 date: 2020-04-18T23:14:28+08:00
 tags: [ansible, sudo]
-draft: true
 ---
 
 ## 把 user 設定成 sudoer 的方式
