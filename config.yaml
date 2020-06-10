@@ -32,6 +32,10 @@ menu:
       weight: -110
       identifier: tags
       url: /tags/
+    - name: Productivity
+      weight: -105
+      identifier: productivity
+      url: /productivity/
     - name: About
       weight: -100
       identifier: about
