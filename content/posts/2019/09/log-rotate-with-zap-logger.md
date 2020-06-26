@@ -1,7 +1,7 @@
 ---
 title: "Log Rotate With Zap Logger"
 date: 2019-09-23T23:53:18+08:00
-tags: [golang, zap, logger]
+tags: [go, logger]
 ---
 
 github.com/uber-go/zap, zap 是目前我比較常用的 logger package

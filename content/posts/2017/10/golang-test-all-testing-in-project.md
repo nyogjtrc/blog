@@ -1,7 +1,7 @@
 ---
-title: "Golang Test All Testing in Project"
+title: "Go Test All Testing in Project"
 date: 2017-10-12T13:34:47+08:00
-tags: [golang, test]
+tags: [go, test]
 ---
 
 想要跑當前專案下的所有 test
@@ -12,4 +12,4 @@ $ go test ./...
 
 ## Reference
 
-[How to `go test` all testings in my project? - Stack Overflow](https://stackoverflow.com/questions/16353016/how-to-go-test-all-testings-in-my-project)
+- [How to `go test` all testings in my project? - Stack Overflow](https://stackoverflow.com/questions/16353016/how-to-go-test-all-testings-in-my-project)

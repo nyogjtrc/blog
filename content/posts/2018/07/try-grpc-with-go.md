@@ -1,7 +1,7 @@
 ---
 title: "Try gRPC, grpc-gateway With Go"
 date: 2018-07-09T14:14:03+08:00
-tags: [gRPC, golang, RESTful]
+tags: [gRPC, go, RESTful]
 ---
 
 ## 什麼是 gRPC
@@ -68,7 +68,7 @@ $ go get -u google.golang.org/grpc
 $ mkdir proto; vi proto/echo.proto
 ```
 
-```
+```proto
 syntax = "proto3";
 
 package proto;
@@ -99,14 +99,14 @@ $ protoc --go_out=plugins=grpc:. proto/*.proto
 開始實作 EchoServer
 
 import 剛剛產生的 echo.pb.go
-```
+```go
 import (
 	pb "github.com/nyogjtrc/grpc-example/proto"
 )
 ```
 
 實作 Server 跟 方法:
-```
+```go
 type echoServer struct{}
 
 // Echo
@@ -119,7 +119,7 @@ func (s *echoServer) Echo(ctx context.Context, in *pb.EchoMessage) (*pb.EchoMess
 
 完整程式碼:
 
-```
+```go
 package main
 
 import (
@@ -159,7 +159,7 @@ func main() {
 
 ### 4. 建立 client 程式
 
-```
+```go
 package main
 
 import (
@@ -201,13 +201,13 @@ func main() {
 ### 5. 實測 gRPC server, client
 
 執行 server
-```
+```bash
 $ go run server/main.go
 grpc example echo server :8888
 ```
 
 執行 client
-```
+```bash
 $ go run client/main.go
 Enter text: 123
 echo:123
@@ -226,7 +226,7 @@ grpc-gateway 會建立一個 reverse proxy server 把 gRPC 服務轉換成 RESTf
 
 ### 1. 要安裝的 plugin
 
-```
+```bash
 go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 ```
 
@@ -234,7 +234,7 @@ go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway
 
 就是把 RESTful 的 router 寫進來
 
-```
+```proto
 syntax = "proto3";
 
 package proto;
@@ -257,7 +257,7 @@ service EchoService {
 
 ### 3. 產生 pb.go, pb.gw.go
 
-```
+```bash
 protoc -I/usr/local/include -I. \
     -I$(GOPATH)/src \
     -I$(GOPATH)/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
@@ -272,7 +272,7 @@ protoc -I/usr/local/include -I. \
 
 把 gRPC 服務加入 proxy 裡面
 
-```
+```go
 func gatewayServer() {
 	fmt.Println("RESTful echo server :9999")
 	grpcAddr := "localhost:8888"
@@ -293,7 +293,7 @@ func gatewayServer() {
 
 ### 5. 實測
 
-```
+```bash
 $ curl -X POST http://localhost:9999/echo/echo -H 'Content-Type: application/json' -d '{ "value": "hi, how are you?" }'
 {"value":"echo:hi, how are you?"}
 ```

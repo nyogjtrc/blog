@@ -1,16 +1,16 @@
 ---
-title: "Error Handling in Golang"
+title: "Error Handling in Go"
 date: 2018-07-26T15:50:07+08:00
-tags: [golang, error]
+tags: [go, error]
 ---
 
-## Golang 原生的 Error Type
+## Go 原生的 Error Type
 
-先認識 golang 的 error interface
+先認識 go 的 error interface
 
-```
+```go
 type error interface {
-    Error() string
+	Error() string
 }
 ```
 
@@ -18,7 +18,7 @@ type error interface {
 
 https://golang.org/pkg/os/#PathError
 
-```
+```go
 // PathError records an error and the operation and file path that caused it.
 type PathError struct {
 	Op   string
@@ -31,7 +31,7 @@ func (e *PathError) Error() string { return e.Op + " " + e.Path + ": " + e.Err.E
 
 ## 建立自己程式裡的 Error struct
 
-依照使用情境 error strcut  
+依照使用情境 error strcut
 
 ### RESTful API Error
 
@@ -43,7 +43,7 @@ strcut fields: code, message, error
 
 example:
 
-```
+```go
 // AppError struct with code and message
 type AppError struct {
 	code    int
@@ -87,7 +87,7 @@ strcut fields: code, message, internal code
 
 example:
 
-```
+```go
 // Error for gateway
 type Error struct {
 	code      int
