@@ -16,6 +16,9 @@ date: 2020-06-11T00:26:27+08:00
 - tldr
 - brew
 - vagrant + VirtualBox
+- [exa](https://the.exa.website/)
+- [HTTPie](https://httpie.org/)
+- [lazydocker](https://github.com/jesseduffield/lazydocker)
 
 ## Application
 
