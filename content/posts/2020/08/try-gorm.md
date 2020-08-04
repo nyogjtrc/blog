@@ -2,7 +2,6 @@
 title: "試用 GORM"
 date: 2020-08-05T00:39:46+08:00
 tags: [go]
-draft: true
 ---
 
 ## ORM (Object Relational Mapping)
