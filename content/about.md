@@ -11,7 +11,7 @@ date: 2020-03-24T01:30:38+08:00
 
 - 後端工程師
 - 八年後端開發經驗。三年領導團隊經驗。
-- 主力為 Golnag, PHP
+- 主力為 Golang, PHP
 - 搭配 VM 或 Docker 建構服務
 - 熟練 Git 等開發工具
 - 熟悉 Nginx, MySQL, Redis
