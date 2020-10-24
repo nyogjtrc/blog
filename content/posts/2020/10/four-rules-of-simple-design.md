@@ -10,7 +10,7 @@ tags: [programming]
 
 看到 Kent Beck 提出四個「簡單設計 (Simple Design)」規則，心中覺得這個就是我最近在尋找的東西。
 
-## 四個「簡單設計 (Simple Design)」規則
+## Kent Beck 的四個「簡單設計 (Simple Design)」規則
 
 - Runs all the tests
     - 通過所有的測試
@@ -21,7 +21,7 @@ tags: [programming]
 - Has the fewest possible classes and methods
     - 盡可能使用最少量的類別跟方法
 
-## Martin Fowler 版本的四個「簡單設計」規則
+## Martin Fowler 的四個「簡單設計」規則
 
 Martin Fowler 以更加簡潔版本來表達這四個規則
 
