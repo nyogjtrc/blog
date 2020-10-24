@@ -1,7 +1,7 @@
 ---
 title: "Functional Programming With Go"
 date: 2020-06-26T15:58:41+08:00
-tags: [functional programming, go]
+tags: [programming, functional programming, go]
 ---
 
 Functional Programming 中文：函數式程式設計，是程式設計方法 (programming paradigm) 的其中一種

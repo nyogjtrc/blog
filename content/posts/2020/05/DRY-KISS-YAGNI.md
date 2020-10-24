@@ -1,7 +1,7 @@
 ---
 title: "軟體開發原則: DRY, KISS, YAGNI"
 date: 2020-05-11T02:39:34+08:00
-tags: [software development, principle]
+tags: [programming, principle]
 ---
 
 最近在 `code review` 時，看到不少讓人頭暈的程式碼

@@ -1,7 +1,7 @@
 ---
 title: "Cohesion and Coupling"
 date: 2020-06-01T01:12:19+08:00
-tags: [software development]
+tags: [programming]
 ---
 
 想要評估一份程式碼是不是好的設計，不會是比較資深的工程師說了就算數
