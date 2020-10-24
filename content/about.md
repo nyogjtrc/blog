@@ -17,3 +17,5 @@ date: 2020-03-24T01:30:38+08:00
 - 熟悉 Nginx, MySQL, Redis
 - 研究 CI/CD, Infrastructure as Code
 - Vim 愛用者
+- 第 12 屆 iT 邦幫忙鐵人賽 DevOps 組完賽 (2020)
+  - [今晚我想來點 Terraform 佐 AWS](https://ithelp.ithome.com.tw/users/20129946/ironman/3383)
