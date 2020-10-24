@@ -61,18 +61,18 @@ params:
 
   maxSeeAlsoItems: 5
 
-  custom_css:
+  customcss:
     - "css/custom.css"
 
   social:
     - name: Github
-      icon: "fab fa-github"
+      icon: "fa fa-github"
       url: https://github.com/nyogjtrc
     - name: Twitter
-      icon: "fab fa-twitter"
+      icon: "fa fa-twitter"
       url: https://twitter.com/nyogjtrc
     - name: rss
-      icon: "fas fa-rss-square"
+      icon: "fa fa-rss-square"
       url: /index.xml
       type: "application/rss+xml"
 
