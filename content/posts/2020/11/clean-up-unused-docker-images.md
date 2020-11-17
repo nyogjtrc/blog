@@ -27,6 +27,8 @@ Error response from daemon: conflict: unable to delete 63130206b0fa (must be for
 - 清除沒有被 tag 的 image
     ```
     $ docker image prune
+    WARNING! This will remove all dangling images.
+    Are you sure you want to continue? [y/N] y
     ```
 - 清除沒有被 tag 也沒有被引用的 image
     ```
