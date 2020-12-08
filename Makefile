@@ -7,5 +7,11 @@ build:
 	hugo -v
 
 # create new post
-new:
+new-post:
+ifdef POST
 	hugo new -v posts/$$(date +%Y/%m)/$(POST).md
+endif
+ifndef POST
+	@echo empty post title
+endif
+
