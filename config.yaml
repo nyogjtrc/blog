@@ -3,7 +3,8 @@ title: "Nyo's Study Book"
 languageCode: zh-tw
 # theme: hugo-dusk
 # theme: hermit
-theme: hugo-coder
+# theme: hugo-coder
+theme: "PaperMod"
 canonifyurls: true
 paginate: 20
 
@@ -18,14 +19,74 @@ permalinks:
 
 SectionPagesMenu: main
 
-pygmentsStyle: dracula
-pygmentsCodeFences: true
-pygmentsCodeFencesGuessSyntax: true
+#pygmentsStyle: dracula
+#pygmentsCodeFences: true
+#pygmentsCodeFencesGuessSyntax: true
+
+markup:
+    highlight:
+        # anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        lineNos: true
+        # noClasses: false
+        style: dracula
+params:
+  env: production
+  #title: ExampleSite
+  author: nyo
+  description: nyo's study note. researching programming, devops, vim ...etc
+  keywords: nyo,nyogjtrc,blog,developer,personal,note
+  #info: 後端工程師の研究筆記
+  #avatarurl: https://avatars0.githubusercontent.com/u/515965
+  #footercontent: nyo, vim user, gopher, keep learn
+  #
+
+  comments: true
+
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  disableSpecial1stPost: true
+  showtoc: true
+  ShowBreadCrumbs: true
+
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04 -0700"
+  #relatedPosts: true
+  since: 2015
+
+  colorscheme: dark
+  hidecolorschemetoggle: true
+
+  maxSeeAlsoItems: 5
+
+  #customcss:
+    #- "css/custom.css"
+
+  socialIcons:
+    - name: Github
+      #icon: "fa fa-github"
+      url: https://github.com/nyogjtrc
+    - name: Twitter
+      #icon: "fa fa-twitter"
+      url: https://twitter.com/nyogjtrc
+    - name: rss
+      #icon: "fa fa-rss-square"
+      url: /index.xml
+      #type: "application/rss+xml"
 
 menu:
   main:
-    - name: Posts
+    - name: Archives
       weight: -120
+      identifier: archives
+      url: /archives/
+    - name: Posts
+      weight: -115
       identifier: posts
       url: /posts/
     - name: Tags
@@ -40,40 +101,4 @@ menu:
       weight: -100
       identifier: about
       url: /about/
-
-params:
-  author: nyo
-  description: nyo's study note. researching programming, devops, vim ...etc
-  keywords: nyo,nyogjtrc,blog,developer,personal,note
-  info: 後端工程師の研究筆記
-  avatarurl: https://avatars0.githubusercontent.com/u/515965
-  footercontent: nyo, vim user, gopher, keep learn
-
-  dateform: "Jan 2, 2006"
-  dateformShort: "Jan 2"
-  dateformNum: "2006-01-02"
-  dateformNumTime: "2006-01-02 15:04 -0700"
-  #relatedPosts: true
-
-  since: 2015
-
-  colorscheme: dark
-  hidecolorschemetoggle: true
-
-  maxSeeAlsoItems: 5
-
-  customcss:
-    - "css/custom.css"
-
-  social:
-    - name: Github
-      icon: "fa fa-github"
-      url: https://github.com/nyogjtrc
-    - name: Twitter
-      icon: "fa fa-twitter"
-      url: https://twitter.com/nyogjtrc
-    - name: rss
-      icon: "fa fa-rss-square"
-      url: /index.xml
-      type: "application/rss+xml"
 
