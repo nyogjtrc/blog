@@ -1,7 +1,7 @@
 ---
 title: "有效率的會議準則"
 date: 2020-12-08T23:46:07+08:00
-tags: [guideline]
+tags: [guideline, meeting]
 ---
 
 開會很花時間，不順利的會議令人心很累。  
