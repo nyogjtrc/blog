@@ -36,7 +36,7 @@ tags: [accounting]
 - 比每天記帳、隨時記帳輕鬆
 - 搭配電子發票跟信用卡的消費明細，大部份的記錄不用自己來
 - 使用 Google Sheets，不用擔心檔案不見，還可以`資料視覺化`
-- Google Sheets 範本: https://reurl.cc/43704R
+- Google Sheets 範本: https://reurl.cc/95Nb2V
 
 ## 每月記帳法 - 記帳流程
 
