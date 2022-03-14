@@ -30,10 +30,10 @@ markup:
         style: dracula
 params:
   env: production
-  #title: ExampleSite
+  title: "Nyo's Study Book"
   author: nyo
   description: nyo's study note. researching programming, devops, vim ...etc
-  keywords: nyo,nyogjtrc,blog,developer,personal,note
+  keywords: [ nyo, nyogjtrc, blog, developer, personal, linux, go, php ]
   #info: 後端工程師の研究筆記
   #avatarurl: https://avatars0.githubusercontent.com/u/515965
   #footercontent: nyo, vim user, gopher, keep learn
