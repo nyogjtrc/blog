@@ -1,7 +1,7 @@
 ---
 title: "優雅的關機 (Graceful Shutdown) Goroutine"
 date: 2021-07-06T23:24:06+08:00
-tags: [golang, goroutine]
+tags: [go, goroutine]
 ---
 
 `Graceful shutdown` 直接翻譯是 **「優雅的關機」**
