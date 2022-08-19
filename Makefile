@@ -12,7 +12,7 @@ build:
 .PHONY: new-post
 new-post:
 ifdef POST
-	hugo new -v posts/$$(date +%Y/%m)/$(POST).md
+	hugo new -v posts/$$(date +%Y/%m)/$$(echo $(POST) | sed 's/ /-/g').md
 endif
 ifndef POST
 	@echo empty post title
