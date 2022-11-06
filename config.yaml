@@ -8,7 +8,7 @@ paginate: 20
 taxonomies:
   tag: tags
 
-googleAnalytics: UA-43264564-2
+googleAnalytics: G-1XXW38NEN1
 hasCJKLanguage: true
 publishDir: ../nyogjtrc.github.io
 permalinks:
