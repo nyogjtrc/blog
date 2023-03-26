@@ -78,6 +78,10 @@ params:
 
 menu:
   main:
+    - name: Search
+      weight: -130
+      identifier: search
+      url: /search/
     - name: Archives
       weight: -120
       identifier: archives
@@ -99,3 +103,8 @@ menu:
       identifier: about
       url: /about/
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
